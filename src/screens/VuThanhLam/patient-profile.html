@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Medpro - Đăng ký khám bệnh online</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://umc.medpro.com.vn/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id = "root">
+        <div>
+            <header>
+                <div class="nav-desk">
+                    <div class="nav-top">
+                        <div class="container">
+                            <ul class="table_cell_top">
+                                <li>
+                                    <i class="fas fa-phone-volume"></i><a class= "m_rl_0" href="tel:19007178">Hỗ trợ chuyên môn: 1900-7178</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone-volume"></i><a class="m_rl_0" href="tel:19002267">Hỗ trợ kỹ thuật: 1900-2267</a>
+                                </li>
+                                <li class="note">
+                                    <div class="dropdown">
+                                        <a class="notification notify show-count dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/patient-profile">
+                                            <span data-count = "1" class="bell-counter">1</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right popup shadow-1" aria-labelledby="dropdownMenuLink">
+                                            <ul class= "list-noti">
+                                                <li class="dropdown-item">
+                                                    <div class = "tab-header-title">
+                                                        <span>Danh sách thông báo</span>
+                                                        <a class = "ml-auto check-all" href="#" title>
+                                                            <i class="fas fa-check"></i>Đánh dấu đã đọc
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <div class="content-noti">
+                                                        <div class="col-12">
+                                                            <p class="font-weight-bold">Promotion/Event</p>
+                                                            <p class="white-space">Tư vấn trực tuyến Viêm khớp vảy nến, những điều bạn chưa biết</p>
+                                                            <p>
+                                                                <i class="fas fa-clock"></i>
+                                                                <span>
+                                                                    Ngày:
+                                                                    21-08-2020
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <div class="content-noti">
+                                                        <div class="col-12">
+                                                            <p class="font-weight-bold">Promotion/Event</p>
+                                                            <p class="white-space">Sống khỏe sẻ chia</p>
+                                                            <p>
+                                                                <i class="fas fa-clock"></i>
+                                                                <span>
+                                                                    Ngày:
+                                                                    11-08-2020
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <div class="content-noti old">
+                                                        <div class="col-12">
+                                                            <p class="font-weight-bold">Promotion/Event</p>
+                                                            <p class="white-space">Kiểm soát lây nhiễm Covid-19</p>
+                                                            <p>
+                                                                <i class="fas fa-clock"></i>
+                                                                <span>
+                                                                    Ngày:
+                                                                    05-08-2020
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <div class="content-noti old">
+                                                        <div class="col-12">
+                                                            <p class="font-weight-bold">Promotion/Event</p>
+                                                            <p class="white-space">Tư vấn trực tuyến NHẬN BIẾT SỚM VIÊM CỘT SỐNG DÍNH KHỚP</p>
+                                                            <p>
+                                                                <i class="fas fa-clock"></i>
+                                                                <span>
+                                                                    Ngày:
+                                                                    24-07-2020
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <div class="content-noti old">
+                                                        <div class="col-12">
+                                                            <p class="font-weight-bold">Hệ thống MEDPRO</p>
+                                                            <p class="white-space">Bệnh viện Đại học Y Dược TPHCM thông báo</p>
+                                                            <p>
+                                                                <i class="fas fa-clock"></i>
+                                                                <span>
+                                                                    Ngày:
+                                                                    18-03-2020
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="text-center">
+                                                        <a href="https://umc.medpro.com.vn/notification" class="see-more" title="xem tất cả">Xem tất cả</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="desk_login">
+                                    <div class="nav-top-logged">
+                                        <div class="dw-userlive" data-toggle="dropdown" id="dropdownMenuLinkUser" aria-haspopup="true" aria-expanded="false">
+                                            <div class="name-user">
+                                                <i class="fas fa-user-circle mr-2"></i><span>Thông tin tài khoản</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-logout" aria-labelledby="dropdownMenuLinkUser">
+                                            <div class="control-dropdown">
+                                                <div class="hinh-user">
+                                                    <img src="https://umc.medpro.com.vn/asset/images/homepage/user.svg">
+                                                </div>
+                                                <ul class="list-info-user">
+                                                    <li>
+                                                        <div class="account-show-text">Xin chào!</div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="email">meocondethuong156@gmail.com</span>
+                                                    </li>
+                                                    <ul class="list-info-user-sub">
+                                                        <li>
+                                                            <a class="info-show-box" href="https://umc.medpro.com.vn/patient-profile">Hồ sơ bệnh nhân</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="info-show-box" href="https://umc.medpro.com.vn/phieu-kham-benh">Phiếu khám bệnh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="info-show-box" href="https://umc.medpro.com.vn/notification">Thông báo</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="action-logout">
+                                                <a class="text-logout-bt"><i class="fas fa-sign-out-alt mr-2"></i>Thoát</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="container">
+                            <div class="d-flex align-items-center">
+                                <ul class="d-flex">
+                                    <li class="dhyd_logo">
+                                        <a class="nav-menu-logo" href="https://umc.medpro.com.vn/">
+                                            <img src="https://umc.medpro.com.vn/asset/images/app/logo_y_duoc.svg" alt="logo-DHYD">
+                                        </a>
+                                        <div class="dhyd_info">
+                                            <span class="dhyd_name_color">
+                                                BỆNH VIỆN ĐẠI HỌC Y DƯỢC
+                                                <sup>®</sup>
+                                            </span>
+                                            <span class="color-2">UNIVERSITY MEDICAL CENTER HCMC</span>
+                                            <span class="color-3">Tiên Phong - Thấu Hiểu - Chuẩn Mực - An Toàn</span>
+                                        </div>
+                                    </li>
+                                    <li class="ml-auto">
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/intro">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/quytrinh">Quy trình</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/tro-giup-medpro">Hướng dẫn sử dụng</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/faq">Thắc mắc</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/contact">Liên hệ</a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn--header-top dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                                                Chọn dịch vụ
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item">Đặt lịch theo bác sĩ</a><hr>
+                                                <a class="dropdown-item">Đặt lịch theo ngày</a><hr>
+                                                <a class="dropdown-item">Lịch tái khám</a><hr>
+                                                <a class="dropdown-item mb-0">Thanh toán viện phí nội trú</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav-mobile">
+                    <div class="container d-flex">
+                        <div class="row">
+                            <button id="toggle-menu" class="menu-toggler mt-home">
+                                <span></span>
+                            </button>
+                            <ul class="d-flex">
+                                <li class="dhyd_logo">
+                                    <a class="nav-menu-logo" href="https://umc.medpro.com.vn/">
+                                        <img src="https://umc.medpro.com.vn/asset/images/app/logo_test.png" alt="logo-DHYD">
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <strong>
+                                            BỆNH VIỆN ĐẠI HỌC Y DƯỢC TP.HCM
+                                            <sup>®</sup>
+                                        </strong>
+                                    </span>
+                                    <span>UNIVERSITY MEDICAL CENTER HCMC</span>
+                                    <span>Tiên Phong - Thấu Hiểu - Chuẩn Mực - An Toàn</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="black-screen" class="black-screen in"></div>
+                <ul id="main-menu" class="menu-collapse in">
+                    <div class="m-menu-top">
+                        <div>
+                            <div class="dw-userlive">
+                                <div class="name-user">
+                                    <i class="fas fa-user-circle mr-2"></i>
+                                    <span class="ml-2">Tài khoản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-menu">
+                        <ul>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/">
+                                    <i class="fas fa-home fa-xs"></i>
+                                    trang chủ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/intro">
+                                    <i class="fab fa-black-tie"></i>
+                                    giới thiệu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/quytrinh">
+                                    <i class="fas fa-circle-notch"></i>
+                                    quy trình
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/tro-giup-medpro">
+                                    <i class="fas fa-book"></i>
+                                    Hướng dẫn sử dụng
+                                </a>
+                            </li>
+                            <li>
+                                <a class="active" aria-current="page" href="https://umc.medpro.com.vn/notification">
+                                    <i class="fas fa-bell"></i>
+                                    Thông báo
+                                    <span data-count="1" class="bell-counter">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/patient-profile">
+                                    <i class="fas fa-user-shield"></i>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/faq">
+                                    <i class="fas fa-question-circle"></i>
+                                    thắc mắc
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/contact">
+                                    <i class="fas fa-envelope"></i>
+                                    liên hệ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://umc.medpro.com.vn/">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Thoát
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="left-support">
+                            <a class= "nav-top-phone" href="tel:19002267">1900-2267</a>
+                            <a class="nav-top-mail" href="mailto:hotro@medpro.com.vn">hotro@medpro.com.vn</a>
+                        </div>
+                    </div>
+                </ul>
+            </header> 
+            <div class="main">
+                <section id="section-intro">
+                    <div class="parallax-section bg_trans">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="parallax-contact parallax-patient-content">
+                                        <div class="contact-title text-center">
+                                            <h3>THÔNG TIN TÀI KHOẢN</h3>
+                                            <i class="fas fa-user-friends">
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="navigation-bar">
+                    <div class="container">
+                        <a href="https://umc.medpro.com.vn/" class="nav-bar-homepage">TRANG CHỦ</a>
+                        <i class="fas fa-angle-right">
+                        </i>
+                        <a href="javascript:void(0)" class="active">THÔNG TIN TÀI KHOẢN</a>
+                        <hr class="my-0">
+                    </div>
+                </div>
+                <section id = "section-info-9">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="left-columns">
+                                    <div class="leftc-name">
+                                        Tài khoản của<a>meocondethuong156@gmail.com</a>
+                                    </div>
+                                    <div class="leftc-menu">
+                                        <a class="leftc-menu-1 active" href="https://umc.medpro.com.vn/patient-profile">
+                                            <i class="far fa-address-book">
+                                            </i>
+                                            Hồ sơ bệnh nhân
+                                            <i class ="fas fa-angle-right">
+                                            </i>
+                                        </a>
+                                        <a class ="leftc-menu-2" href="https://umc.medpro.com.vn/phieu-kham-benh">
+                                            <i class = "fas fa-file-medical">
+
+                                            </i>
+                                            Phiếu khám bệnh
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                        <a class ="leftc-menu-3" href="https://umc.medpro.com.vn/notification">
+                                            <i class="far fa-bell"></i>
+                                            Thông báo
+                                            <span class="noti-counter shadow-2" data-count=1>1</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                        <a class="leftc-menu-4" href="https://umc.medpro.com.vn/lich-su-thanh-toan-vien-phi">
+                                            <i class="far fa-credit-card"></i>
+                                            Lịch sử thanh toán
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 col-xs-12">
+                                <div class= "group-dashed group-dashed-info text-center">
+                                    <i class="fas fa-user-plus"></i><div>Thêm hồ sơ bệnh nhân</div>
+                                </div>
+                                <div class="group group-files shadow-2">
+                                    <div class="group-files-item d-flex">
+                                        <div class="group-files-item-left">
+                                            <div class="gfi-name">VŨ THANH LAM</div>
+                                            <div class="gfi-info">
+                                                Địa chỉ:
+                                                F1, 190 Lò Đúc, P.Đống Mác, Q. Hai Bà Trưng, Hà Nội
+                                            </div>
+                                            <div class="gfi-info">
+                                                Điện thoại:
+                                                091****495
+                                            </div>
+                                            <div>
+                                                <div class="gfi-info">
+                                                    Giới tính:
+                                                    Nữ
+                                                </div>
+                                                <div class="gfi-info">
+                                                    CMND/Passport: 013628378
+                                                </div>
+                                                <div class="gfi-info">Email: lamvuthanh156@yahoo.com</div>
+                                                <div class="gfi-info">Ngày sinh: 15/06/1999</div>
+                                                <div class="gfi-info">Nghề nghiệp: Sinh viên</div>
+                                                <div class="gfi-info">Quốc gia: Việt Nam</div>
+                                                <div class="gfi-info">Dân tộc: Kinh</div>
+                                            </div>
+                                        </div>
+                                        <div class="group-files-item-right ml-auto position-relative">
+                                            <a class="gfi-edit" style="cursor: pointer;">
+                                                <i class="fas fa-edit"></i>Sửa
+                                            </a>
+                                            <a class="gfi-delete" style="cursor: pointer;">
+                                                <i class="fas fa-times-circle"></i>Xóa
+                                            </a>
+                                            <a class="gfi-see-more" style="cursor: pointer;">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="help-call">
+                    <a class="icons-top" href="javascript:;">
+                        <i class="fas fa-arrow-circle-up"></i>
+                    </a>
+                    <a class="icons-email" href="https://umc.medpro.com.vn/contact">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:19002267" title="19002267">
+                        <i class="fas fa-phone-square"></i>
+                        <span class="text-hot">Hotline</span>
+                        <span class="text-phone">19002267</span>
+                    </a>
+                    <a href="javascript:;" title="close" class="arrow-change">
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+            <footer class="footer-classic">
+                <div class="footer-classic-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 text-center text-sm-left">
+                                <article class="unit unit-sm-horizontal d-flex">
+                                    <div class="unit-left">
+                                        <a class = " brand brand-md" href="https://umc.medpro.com.vn/">
+                                            <img  class= "brand-logo" src="https://umc.medpro.com.vn/asset/images/app/logo_yduoc.svg" alt="logo-DHYD">
+                                        </a>
+                                    </div>
+                                    <div class="unit-body">
+                                        <span>
+                                            BỆNH VIỆN ĐẠI HỌC Y DƯỢC TP.HCM
+                                            <sup>®</sup>
+                                        </span>
+                                        <a class="address-footer" target="_blank" href="https://www.google.com/maps/place/B%E1%BB%87nh+Vi%E1%BB%87n+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Y+D%C6%B0%E1%BB%A3c+C%C6%A1+S%E1%BB%9F+1/@10.7552226,106.6632679,18z/data=!3m1!4b1!4m5!3m4!1s0x31752efa87dc6d6d:0x4feb0a1e755b6d62!8m2!3d10.7552226!4d106.6643622"> 215 Hồng Bàng, P.11, Q.5, TP.HCM</a>
+                                        <a class target="_blank" href="tel:02838554269">ĐT: (028) 3855 4269</a>
+                                        <span>www.bvdaihoc.com.vn</span>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 text-center text-sm-left">
+                                <ul class="footer-info-list">
+                                    <li>
+                                        <a href="https://umc.medpro.com.vn/contact">Liên hệ</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://umc.medpro.com.vn/faq">Hỏi đáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://umc.medpro.com.vn/term">Điều khoản dịch vụ</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://umc.medpro.com.vn/private">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://umc.medpro.com.vn/quydinh">Quy định sử dụng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 text-center text-sm-left">
+                                <ul class="footer-info-download">
+                                    <li>
+                                        <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=44217" title="đã thông báo Bộ Công Thương" target="_blank">
+                                            <img src="https://umc.medpro.com.vn/asset/images/homepage/bocongthuong.png" alt="Bộ Công Thương">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://online.gov.vn/WebsiteDisplay.aspx?DocId=44676" title="đã đăng ký Bộ Công Thương" target="_blank">
+                                            <img src="https://umc.medpro.com.vn/asset/images/homepage/20150827110756-dadangky.png" alt="Bộ Công Thương">
+                                        </a>
+                                    </li>
+                                    <li class="text-left w-100">
+                                        <a class="medpro_logo" href="https://umc.medpro.com.vn/">
+                                            <img src="https://umc.medpro.com.vn/asset/images/homepage/medpro-white.svg" alt="MEDPRO">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://play.google.com/store/apps/details?id=vn.pkh.medpro" title="Tải ứng dụng Google Play" target="_blank">
+                                            <img class="dl_footer" src="https://umc.medpro.com.vn/asset/images/homepage/stork-google-btn.svg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://itunes.apple.com/us/app/umc-dang-ky-kham-benh-online/id1427830275?ls=1&mt=8" title="Tải ứng dụng iOS" target="_blank">
+                                            <img class="dl_footer" src="https://umc.medpro.com.vn/asset/images/homepage/app-store-badge-black.svg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-4">
+                            <div class="col-md-8 text-center m-auto copy-right mt-20">
+                                <span>© Bản quyền thuộc Công Ty Cổ Phần Ứng Dụng PKH</span>
+                                <span>Giấy CNĐKDN số 0314886357, do Sở Kế Hoạch và Đầu Tư Tp Hồ Chí Minh - cấp ngày 21/01/2019.</span>
+                                <span>Trụ sở: 97 Trần Quang Diệu, phường 14, quận 3, Tp Hồ Chí Minh.</span>
+                                <span>Điện thoại: (028) 710 78098</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-classic-aside footer-classic-darken">
+                    <div class="container">
+                        <div class="layout-justify">
+                            <p class="rights"></p><nav class="nav-minimal">
+                                <ul class="nav-minimal-list">
+                                    <li class="ml-auto">
+                                        <a class="nav-menu-item" href="https://umc.medpro.com.vn/">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item"  href="https://umc.medpro.com.vn/intro">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item"  href="https://umc.medpro.com.vn/quytrinh">Quy trình</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item"  href="https://umc.medpro.com.vn/faq">Thắc mắc</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-menu-item"  href="https://umc.medpro.com.vn/contact">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <button style="position:fixed; bottom: 0px; right: 0px;">
+            <i class="fas fa-keyboard" style="font-size:50px"></i>
+        </button>
+    </div>
+    <script src="patient-profile.js"></script>
+    <div tabindex="-1" style="position: relative; z-index: 1050;"></div>
+        <div class>
+            <div class="modal fade" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <p>
+                                    <span class="see-more">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                        <a href="#" title="">Xem chi tiết</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"></button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
