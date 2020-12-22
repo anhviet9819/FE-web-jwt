@@ -12,7 +12,7 @@ export default function Chonhoso() {
     const fetchProductList = async () => {
       try {
         //const params = { _page: 1, _limit: 10 };
-        const response = await hosoApi.getOne(AuthService.getCurrentUser().taikhoanid);
+        const response = await hosoApi.getOneByTaikhoanid(AuthService.getCurrentUser().id);
         console.log("Fetch products successfully: ", response);
         setProductList([response]);
       } catch (error) {

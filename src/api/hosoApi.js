@@ -15,7 +15,12 @@ const hosoApi = {
   deleteBenhnhan : (benhnhanid) => {
     const url = `/benhnhan/${benhnhanid}`;
     return axiosClient.delete(url);
-  }
+  },
+
+  getOneByTaikhoanid : (taikhoanid) => {
+    const url = `/benhnhan/details/${taikhoanid}`;
+    return axiosClient.get(url);
+  },
 }
 
 export default hosoApi;

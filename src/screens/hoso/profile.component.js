@@ -19,9 +19,11 @@ export default class Profile extends Component {
         <Header/>
         <header className="jumbotron">
           <h3>
-            <strong>{currentUser.username}</strong> Profile
+            <strong>{currentUser.username}</strong>'s profile
           </h3>
         </header>
+        <p>Họ và tên: {currentUser.hoten}</p>
+        <p>Số điện thoại: {currentUser.sdt}</p>
         <p>
           <strong>Token:</strong>{" "}
           {currentUser.accessToken.substring(0, 20)} ...{" "}
