@@ -83,7 +83,7 @@ function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/datlich">
+              <Link className="nav-link" to="/chonhoso">
                 ĐẶT LỊCH
               </Link>
             </li>

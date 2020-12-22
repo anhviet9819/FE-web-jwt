@@ -159,6 +159,7 @@
     cursor: pointer;
 }
 #section-infor-13 .row{
+    display: flex;
     border: 1px solid #cdd8ea;
     margin: 0px 0px 20px;
     padding: 20px 20px 40px;

@@ -110,7 +110,8 @@ class App extends Component {
             <Route exact path="/gioithieu" component={Gioithieu} />
             <Route exact path="/quytrinh" component={Quytrinh} />
             {/* <Route exact path="/datlich" component={Dangkykham} /> */}
-            <Route exact path="/datlich" component={Chonhoso} />
+            <Route exact path="/chonhoso" component={Chonhoso} />
+            <Route exact path="/dangkykham" component={Dangkykham} />
             <Route path="/user" component={BoardUser} />
           </Switch>
         </div>
