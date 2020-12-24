@@ -2,3 +2,11 @@ form {
     margin: 0 auto; 
     width:250px;
     }
+
+.form_sizing {
+        width: 500px;
+}
+    
+.margin{
+        margin-bottom: 20px;
+}
