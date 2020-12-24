@@ -33,41 +33,36 @@ function Lienhe() {
               <hr className="my-0" />
             </div>
         </div>
-        <div>
+        
         <center>
-        <h1>GIẢI ĐÁP THẮC MẮC, GÓP Ý VỀ DỊCH VỤ</h1>
-        <form>
-        <table>
-        <tr>
-        <td><label htmlFor="name" class="text-center">Họ tên</label><br /></td>
-        <td><input type="text" id="name" name="name" defaultValue="" /><br /></td>
-        </tr>
-        <tr>  
-        <td><label htmlFor="email">Email</label><br /></td>
-        <td><input type="email" id="email" name="email" defaultValue="" /><br /></td>
-        </tr>
-        <tr>  
-        <td><label htmlFor="phone">SĐT</label><br /></td>
-        <td><input type="tel" id="phone" name="phone" defaultValue="" /><br /></td>
-        </tr>
-        <tr>
-        <td><label htmlFor="vande">Vấn đề</label> <br /></td>
-            <select name="choose" id="choose">
-              <option value="Nhấn để chọn">Nhấn để chọn</option>
-              <option value="Vấn đề chuyên môn">Vấn dề chuyên môn</option>
-              <option value="Vấn đề kỹ thuật">Vấn đề kỹ thuật</option>
-              <option value="Vấn đề khác">Vấn đề khác</option>
-            </select><br />
-        </tr>
-        <tr>
-        <td><label htmlFor="note">Nội dung</label><br /></td>
-        <td><textarea name="note" defaultValue={""} /><br /></td>
-        </tr>
-            <input type="submit" defaultValue="submit" />
-        </table>
-        </form>
-        </center>
+        <div class="margin">
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Họ tên</label>
+          <div class="form_sizing">
+          <input type="text" className="form-control" id="name" placeholder="Nhập tên" />
+          </div>
         </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Email address</label>
+          <div class="form_sizing">
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Nhập email" />
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Số điện thoại</label>
+          <div class="form_sizing">
+          <input type="text" className="form-control" id="phone" placeholder="Nhập số điện thoại" />
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Nội dung</label>
+          <div class="form_sizing">
+          <input type="text" className="form-control" id="information" placeholder="Nhập nội dung" />
+          </div>
+        </div>
+        <button type="submit" className="btn btn-primary">Gửi</button>
+        </div>
+        </center>
         <footer className="footer">
         <Footer/>
       </footer>
